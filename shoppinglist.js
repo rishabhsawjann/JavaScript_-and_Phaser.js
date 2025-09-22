@@ -12,3 +12,5 @@ function getShoppingListMsg(shoppingList) {
 
 // ✅ Call the function and print the message
 console.log(getShoppingListMsg(shoppingList));
+shoppingList.push("Grapes");
+console.log(getShoppingListMsg(shoppingList));
