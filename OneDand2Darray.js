@@ -26,3 +26,14 @@ This allows us to easily access individual elements
 
  //Array destructing can also be used to swap values
  //of two variables without using a temporary variable.
+
+ //Now let's look at how do we use three dots(...)
+ //it allows us to capture the remaining elements of an array
+ //that haven't been destructed into a new array
+ let number=[1,2,3,4,5,6,7,8,9,10];
+ let [one,two, ...rest]=numbers;
+ console.log(first);
+ console.log(second);
+ console.log(rest);
+
+ 
