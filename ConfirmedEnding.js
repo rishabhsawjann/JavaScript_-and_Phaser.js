@@ -1,9 +1,5 @@
 function confirmEnding(str, target) {
-    if(str.charAt(str.length - 1) === target) {
-        return true;
-    } else {
-        return false;
-    }
+    return str.substring(str.length-target.length) === target;
 }
 console.log(confirmEnding("Hello world", "d"));
-console.log(confirmEnding("Hello world", "d"));
+console.log(confirmEnding("Hello world", "o"));
