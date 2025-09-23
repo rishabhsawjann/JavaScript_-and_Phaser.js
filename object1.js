@@ -36,10 +36,19 @@ console.log(person.age);
 const rishabh=
 {
     age:23,
-    Id="Rishabh",
+    id:"Rihabh",
     city:"Mussoorie",
 };
 
 console.log(rishabh["age"]);
 console.log(rishabh["city"]);
+
+// this flexibility makes bracket notation very useful
+// it is worth noting that js is incredible powerful and versatile.
+//they can contain not just simple values like strings and numbers,
+//but also arrays or other objects.
+
+//Understanding objects and how to work with  them is very important
+// as they are extermely used in language 
+
 
