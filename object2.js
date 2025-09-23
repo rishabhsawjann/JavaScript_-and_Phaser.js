@@ -14,3 +14,12 @@
  
  delete person.job;
  console.log(person.job);
+
+
+ //Now let's check how to see if the object has property:
+ const name=
+ {
+    id:rishabh,
+    age:23,
+
+ };
