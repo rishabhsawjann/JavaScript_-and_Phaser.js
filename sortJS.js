@@ -11,3 +11,17 @@ in the same place*/
 const fruits=["Banana","Apple","kela","sab"];
 fruits.sort();
 console.log(fruits);
+
+
+// suppose we have a set of numbers:
+const num=[45,6,72,3,5656,89];
+num.sort();
+console.log(num);
+
+// we expected to see 3,6,45,89,72,5656
+// but we did not get the correct result
+
+//  but we did not because sort method converts the elments to
+//string and then compares their sequences of UTF-16 code unit
+//values.
+// basically using ascii values:

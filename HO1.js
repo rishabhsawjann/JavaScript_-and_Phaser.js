@@ -1,18 +1,23 @@
-// this is an example of higher order function
+// what if we have too many functions 
 
-function operateOnArray(arr, operation)
+function sayHello()
 {
-    let result=[];// this is an empty array
-    for(let i=0; i<arr.length;i++)
-    {
-        result.push(operation(arr[i]));
-    }
-    return result;
+    return "Hello";
 }
-function double(x)
+function sayHi()
 {
-    return x*2;
+    return "Hi";
 }
-let numbers=[1,2,3,4,5];
-let doubledNumbers=operateOnArray(numbers,double);
+function sayBye()
+{
+    return "Bye!";
+}
 
+//Higher-order function
+function greet(func)
+{
+    return func();// executes the function you pass in
+}
+console.log(greet(sayHello)); // "Hello!"
+console.log(greet(sayHi));  //Hi!
+console.log(greet(sayBye));//Bye!
