@@ -1,3 +1,6 @@
+
+//a callback function is just a function you give to another function, so that 
+// it can call it back later.
 function sayHello()
 {
     console.log("Hello!");
