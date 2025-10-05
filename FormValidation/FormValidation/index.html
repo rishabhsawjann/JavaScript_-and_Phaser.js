@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    input { margin: 8px 0; padding: 6px; }
+    .error { color: red; font-size: 14px; }
+    .success { color: green; font-size: 16px; font-weight: bold; }
+    .fail { color: red; font-size: 16px; font-weight: bold; }
+  </style>
+  <script src="Form Validation.js"></script>
+
+</head>
+<body>
+  <h2>Form Validation</h2>
+
+  <form id="myForm" onsubmit="return validateForm()">
+    <!-- Name -->
+    <label>Name:</label><br>
+    <input type="text" id="name" placeholder="Enter name">
+    <span id="nameError" class="error"></span><br>
+
+    <!-- Phone -->
+    <label>US Phone Number:</label><br>
+    <input type="text" id="phone" placeholder="123-456-7890">
+    <span id="phoneError" class="error"></span><br>
+
+    <!-- Date -->
+    <label>Date (MM/DD/YYYY):</label><br>
+    <input type="text" id="date" placeholder="MM/DD/YYYY">
+    <span id="dateError" class="error"></span><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Message area -->
+  <p id="formMessage"></p>
+
+  <script src="Form Valdation.js"></script>
+</body>
+</html>
